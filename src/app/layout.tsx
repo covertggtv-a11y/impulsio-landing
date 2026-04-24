@@ -29,14 +29,25 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Inline script to prevent flash of wrong theme
+  const themeScript = `
+    (function() {
+      try {
+        var theme = localStorage.getItem('impulsio-theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch(e) {}
+    })();
+  `;
+
   return (
-    <html lang="en" className={`${inter.variable} antialiased`}>
+    <html lang="en" className={`${inter.variable} antialiased`} data-theme="dark">
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body
         style={{
           margin: 0,
           padding: 0,
-          background: "#0F172A",
-          color: "#F1F5F9",
           fontFamily:
             "var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
         }}

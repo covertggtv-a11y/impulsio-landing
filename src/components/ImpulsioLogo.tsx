@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-export function ImpulsioLogo({ className = "", size = "lg" }: { className?: string; size?: "sm" | "md" | "lg" }) {
+export function ImpulsioLogo({ className = "", size = "lg", variant = "default" }: { className?: string; size?: "sm" | "md" | "lg"; variant?: "default" | "nav" }) {
   const height = size === "sm" ? 50 : size === "md" ? 60 : 80;
 
   return (
@@ -13,7 +13,11 @@ export function ImpulsioLogo({ className = "", size = "lg" }: { className?: stri
       height={height}
       className={className}
       priority
-      style={{ objectFit: "contain" }}
+      style={{
+        objectFit: "contain",
+        filter: variant === "nav" ? "var(--logo-filter)" : "var(--logo-hero-filter)",
+        transition: "filter 0.35s ease",
+      }}
     />
   );
 }
@@ -25,7 +29,11 @@ export function ImpulsioIcon({ size = 32 }: { size?: number }) {
       alt="Impulsio"
       width={Math.round(size * (167 / 60))}
       height={size}
-      style={{ objectFit: "contain" }}
+      style={{
+        objectFit: "contain",
+        filter: "var(--footer-icon-filter)",
+        transition: "filter 0.35s ease",
+      }}
     />
   );
 }
