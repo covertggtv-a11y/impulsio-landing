@@ -1,7 +1,7 @@
 "use client";
 
 export function ImpulsioLogo({ className = "", size = "lg" }: { className?: string; size?: "sm" | "md" | "lg" }) {
-  const scale = size === "sm" ? 0.55 : size === "md" ? 0.75 : 1;
+  const scale = size === "sm" ? 0.8 : size === "md" ? 0.9 : 1;
   const width = 520 * scale;
   const height = 100 * scale;
 
@@ -19,11 +19,11 @@ export function ImpulsioLogo({ className = "", size = "lg" }: { className?: stri
         <linearGradient id={`textGrad-${gradId}`} x1="0%" y1="0%" x2="100%" y2="0%">
           <stop offset="0%" stopColor="#FF6B35" />
           <stop offset="50%" stopColor="#FF6B35" />
-          <stop offset="100%" stopColor="#1E3A8A" />
+          <stop offset="100%" stopColor="#4F46E5" />
         </linearGradient>
         <linearGradient id={`arrowGrad-${gradId}`} x1="0%" y1="100%" x2="0%" y2="0%">
           <stop offset="0%" stopColor="#FF6B35" />
-          <stop offset="100%" stopColor="#2563EB" />
+          <stop offset="100%" stopColor="#4F46E5" />
         </linearGradient>
       </defs>
 
@@ -41,7 +41,7 @@ export function ImpulsioLogo({ className = "", size = "lg" }: { className?: stri
 
         {/* Small fins at the base — orange left, blue right */}
         <polygon points="5,58 -4,68 8,64" fill="#FF6B35" opacity="0.85" />
-        <polygon points="16,64 28,68 19,58" fill="#2563EB" opacity="0.85" />
+        <polygon points="16,64 28,68 19,58" fill="#4F46E5" opacity="0.85" />
 
         {/* Burst/motion lines at the tip */}
         <line x1="4" y1="5" x2="-2" y2="-4" stroke="#FF6B35" strokeWidth="2.8" strokeLinecap="round" />
@@ -89,7 +89,7 @@ export function ImpulsioLogo({ className = "", size = "lg" }: { className?: stri
         fontFamily="'Arial', 'Helvetica Neue', sans-serif"
         fontWeight="700"
         fontSize="12"
-        fill="#1E3A8A"
+        fill="#4F46E5"
         letterSpacing="4.5"
       >
         FUELING FORWARD
@@ -109,7 +109,7 @@ export function ImpulsioIcon({ size = 32 }: { size?: number }) {
       <defs>
         <linearGradient id="iconGrad" x1="0%" y1="100%" x2="100%" y2="0%">
           <stop offset="0%" stopColor="#FF6B35" />
-          <stop offset="100%" stopColor="#2563EB" />
+          <stop offset="100%" stopColor="#4F46E5" />
         </linearGradient>
       </defs>
       <circle cx="32" cy="32" r="30" fill="none" stroke="url(#iconGrad)" strokeWidth="3" strokeDasharray="60 130" strokeLinecap="round" />
@@ -120,7 +120,7 @@ export function ImpulsioIcon({ size = 32 }: { size?: number }) {
         <polygon points="0,-16 9,-4 -9,-4" fill="url(#iconGrad)" />
         {/* Fins */}
         <polygon points="-4,12 -8,18 -1,14" fill="#FF6B35" opacity="0.9" />
-        <polygon points="1,14 8,18 4,12" fill="#2563EB" opacity="0.9" />
+        <polygon points="1,14 8,18 4,12" fill="#4F46E5" opacity="0.9" />
         {/* Burst lines */}
         <line x1="-5" y1="-15" x2="-8" y2="-22" stroke="#FF6B35" strokeWidth="2.5" strokeLinecap="round" />
         <line x1="0" y1="-18" x2="0" y2="-25" stroke="#FF8A5C" strokeWidth="2.5" strokeLinecap="round" />
