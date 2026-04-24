@@ -117,11 +117,11 @@ export default function Home() {
   });
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const saved = localStorage.getItem("impulsio-theme") || "dark";
+    const saved = localStorage.getItem("impulsio-theme") || "light";
     setTheme(saved);
     document.documentElement.setAttribute("data-theme", saved);
     setMounted(true);

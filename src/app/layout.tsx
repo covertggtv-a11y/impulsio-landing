@@ -33,14 +33,14 @@ export default function RootLayout({
   const themeScript = `
     (function() {
       try {
-        var theme = localStorage.getItem('impulsio-theme') || 'dark';
+        var theme = localStorage.getItem('impulsio-theme') || 'light';
         document.documentElement.setAttribute('data-theme', theme);
       } catch(e) {}
     })();
   `;
 
   return (
-    <html lang="en" className={`${inter.variable} antialiased`} data-theme="dark">
+    <html lang="en" className={`${inter.variable} antialiased`} data-theme="light">
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
