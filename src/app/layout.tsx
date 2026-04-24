@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description:
     "Built for brokerages that refuse to settle. Contacts, deals, MLS listings, AI insights, and team tools — one platform, fully branded, fully yours.",
   icons: {
-    icon: "/favicon.svg",
+    icon: "/favicon.ico",
   },
   openGraph: {
     title: "Impulsio — Fueling Forward",
