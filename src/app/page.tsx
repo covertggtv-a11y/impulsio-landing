@@ -207,7 +207,7 @@ export default function Home() {
               href="#contact"
               style={{
                 padding: "10px 28px",
-                background: "linear-gradient(135deg, #FF6B35 0%, #2563EB 100%)",
+                background: "linear-gradient(135deg, #FF6B35 0%, #1E3A8A 100%)",
                 color: "#fff",
                 borderRadius: 8,
                 fontWeight: 600,
@@ -268,10 +268,6 @@ export default function Home() {
             position: "relative",
           }}
         >
-          <div className="animate-fade-in-up" style={{ marginBottom: 32 }}>
-            <ImpulsioLogo size="lg" />
-          </div>
-
           <h1
             className="animate-fade-in-up-delay-1"
             style={{
@@ -312,7 +308,7 @@ export default function Home() {
               href="#features"
               style={{
                 padding: "14px 36px",
-                background: "linear-gradient(135deg, #FF6B35 0%, #2563EB 100%)",
+                background: "linear-gradient(135deg, #FF6B35 0%, #1E3A8A 100%)",
                 color: "#fff",
                 borderRadius: 10,
                 fontWeight: 700,
@@ -673,7 +669,7 @@ export default function Home() {
                 padding: "14px 32px",
                 background: submitting
                   ? t("--disabled-bg")
-                  : "linear-gradient(135deg, #FF6B35 0%, #2563EB 100%)",
+                  : "linear-gradient(135deg, #FF6B35 0%, #1E3A8A 100%)",
                 color: "#fff",
                 borderRadius: 10,
                 fontWeight: 700,
